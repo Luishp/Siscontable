@@ -12,8 +12,10 @@ exit;
 		<meta charset="utf-8" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Inicio</title>
+		<link  rel="stylesheet" href="estilos.css">
     </head>
     <body>
+	<div id="contenedor">
 	<?php
         echo "<p>bienvenido a la matrix ".$_SESSION['nombre']."</p></br>";
 	?>
@@ -23,5 +25,6 @@ exit;
 		<a href="bienvenido.php">
 			<img src="costos.jpg"/>
 		</a>
+	</div>
     </body>
 </html>

@@ -12,8 +12,10 @@ exit;
 		<meta charset="utf-8" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Transacciones</title>
+		<link  rel="stylesheet" href="estilos.css">
     </head>
     <body>
+	<div id="contenedor">
 	<?php
         echo "<p>bienvenido a las transacciones ".$_SESSION['nombre']."</p></br>";
 	?>
@@ -48,5 +50,6 @@ exit;
 	<hr />
 	<a href="bienvenido.php">retornar</a></br>
 	<a href="salir.php">salir</a>
+	</div>
     </body>
 </html>

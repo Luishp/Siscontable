@@ -18,25 +18,23 @@ exit;
     <body>
 	<div id="contenedor">
 	<?php
-        echo "<p>bienvenido a las compras ".$_SESSION['nombre']."</p></br>";
+        echo "<p>bienvenido a las Ventas ".$_SESSION['nombre']."</p></br>";
 	?>
 	<form action="transcompra.php" method='GET'>
         Fecha: <input type="text" name="fecha"><br>
-		Monto: <input type="text" name="monto">
+		Costo del producto: <input type="text" name="monto">
 		Calcularle IVA <input type="checkbox" name="iva" checked value="true"><br>
-		Tipo de materia prima:
+		Producto a vender:
 		<?php
 		$arreglo=stabla("cuenta");
 		echo "<select name='MP'>";
 		while($fila=mysql_fetch_array($arreglo)) {
-			if($fila['subCuenta1']=="Materia prima"){
-				echo "<option value='".$fila['nombreCuenta']."'>".$fila['nombreCuenta']."</option>";
-			}
+			echo "<option value='".$fila['nombreCuenta']."'>".$fila['nombreCuenta']."</option>";
 		}
 		echo "</select>";
 		?>
 		<br>
-		Cuenta de donde saldra dinero:
+		Ingresar dinero a cuenta:
 		<?php
 		$arreglo=stabla("cuenta");
 		echo "<select name='dinero'>";
@@ -48,7 +46,7 @@ exit;
 		echo "</select>";
 		?>
 		<br>
-        <input id="boton1" type='submit' value='Registrar compra' ><br>
+        <input id="boton1" type='submit' value='Registrar venta' ><br>
         </form>
 	<a href="bienvenido.php">retornar</a></br>
 	<a href="salir.php">salir</a>

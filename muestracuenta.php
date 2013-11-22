@@ -13,9 +13,11 @@ exit;
 		<meta charset="utf-8" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Mis cuentas</title>
+		<link  rel="stylesheet" href="estilos.css">
     </head>
     <body>
-		<h2>Eliga cuenta a revisar</h2>
+	<div id="contenedor">
+		<h2>Elija cuenta a revisar</h2>
 		<form action="muestracuenta1.php" method='GET'>
 		<?php
 		$arreglo=stabla("cuenta");
@@ -27,5 +29,6 @@ exit;
 		?>
 		<input type="submit" value="Mostrar Cuenta" />
 		</form>
+	</div>
     </body>
 </html>

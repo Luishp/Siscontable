@@ -12,8 +12,10 @@ exit;
 		<meta charset="utf-8" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Compras</title>
+		<link  rel="stylesheet" href="estilos.css">
     </head>
     <body>
+	<div id="contenedor">
 	<?php
 	include 'conexionBD.php';
         echo "<p>bienvenido a las compras ".$_SESSION['nombre']."</p></br>";
@@ -51,5 +53,6 @@ exit;
 	<p>Transaccion registrada</p>
 	<a href="bienvenido.php">retornar</a></br>
 	<a href="salir.php">salir</a>
+	</div>
     </body>
 </html>

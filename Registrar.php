@@ -13,10 +13,13 @@ exit;
 		<meta charset="utf-8" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Transacciones</title>
+		<link  rel="stylesheet" href="estilos.css">
     </head>
     <body>
-	</br></br><center><p id='caja1'>Transaccion Registrada</p></center></br>
-	<a href="bienvenido.php">Realizar otra transaccion</a></br>
+	<div id="contenedor">
+		</br></br><center><p id='caja1'>Transaccion Registrada</p></center></br>
+		<a href="bienvenido.php">Realizar otra transaccion</a></br>
+	</div>
 	</body>
 </html>
 
@@ -37,8 +40,5 @@ $abono=$_GET['abono'];
 	echo $cant[0];
 	registrarCargo($cant,$fecha,$monto,$cargo);
 	registrarAbono($cant,$fecha,$monto,$abono);
-
-//registrarCargo($cant,$fecha,$monto,$cargo,$abono);
-//registrarAbono($cant,$fecha,$monto,$cargo,$abono);
 
 ?>

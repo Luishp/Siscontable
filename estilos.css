@@ -1,0 +1,16 @@
+body{
+	background: olive;
+	color: white; /*color de la fuente*/
+	font-family: Helvetica, Arial; /* si helvetica no lo encuentra el navegador entonces busca arial.*/
+	fontsize: 16px; /*tamaño de la fuente le da tamaño relativo a todo este es un fontsize global*/
+	
+}
+
+#contenedor{
+	background: red;
+	border-radius: 0.5em;
+	display: block;
+	width: 960px;
+	margin: 15px auto;
+	text-align: left;
+}

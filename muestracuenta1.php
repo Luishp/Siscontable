@@ -13,8 +13,10 @@ exit;
 		<meta charset="utf-8" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Mis cuentas</title>
+		<link  rel="stylesheet" href="estilos.css">
     </head>
     <body>
+	<div id="contenedor">
 		<h2>Registros de la cuenta elegida:</h2>
 		<?php
 		
@@ -38,5 +40,6 @@ exit;
 		
 		?>
 		<a href="bienvenido.php">Retornar</a>
+	</div>
     </body>
 </html>
